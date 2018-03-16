@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">businessNews</string>
+    <string name="new_description">new_description</string>
+    <string name="searchable_item">Searchable Item</string>
+    <string name="searchable_item_menu">searchable Item</string>
+    <string name="settings">settings</string>
+    <string name="search_item_menu">Search Item</string>
+    <string name="search_activity_label">Search Label</string>
+    <string name="search_view_label">Search View Label</string>
+    <string name="searchable_hint">Tags separted by ,</string>
+    <string name="new_detail_activity_title">New Details</string>
+</resources>

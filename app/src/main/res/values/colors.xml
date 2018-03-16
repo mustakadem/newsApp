@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="newsSegundaryColor">#de4324</color>
+    <color name="newsPrimaryColor">#124fec</color>
+    <color name="NewBackgroundColor">#82858c</color>
+    <color name="newPrimaryTextColor">#f5f6f9</color>
+    <color name="newSecondaryTextColor">#c4ce0f</color>
+
+
+
+</resources>
