@@ -32,9 +32,9 @@ public class GetNewJsonData extends GetRawData {
         return mNews;
     }
 
-    public boolean createAndUpdateUri(String searchCriteria, boolean matchAll){
+    private boolean createAndUpdateUri(String searchCriteria, boolean matchAll){
         final String NEW_BASE_API_URL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=074865eadbda4f82b8ee4387282688a9";
-        final String TAGS_PARAM = "tags";
+        final String TAGS_PARAM = "q";
         final String TAGMODE_PARAM = "tagmode";
         final String FORMAT_PARAM = "format";
 

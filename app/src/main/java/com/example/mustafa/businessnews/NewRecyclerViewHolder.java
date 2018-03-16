@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class NewRecyclerViewHolder extends RecyclerView.ViewHolder {
 
     private ImageView mThumbnail;
-    private TextView mTitle;
+    public TextView mTitle;
 
     public NewRecyclerViewHolder(View itemView) {
         super(itemView);

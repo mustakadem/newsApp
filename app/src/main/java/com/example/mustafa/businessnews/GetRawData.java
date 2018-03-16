@@ -47,6 +47,13 @@ public class GetRawData {
         return mDownloadStatus;
     }
 
+    public void reset() {
+        mDownloadStatus = DownloadStatus.IDLE;
+        mRawUrl = null;
+        mData = null;
+    }
+
+
     public void execute(){
         mDownloadStatus = DownloadStatus.PROCESSING;
         DownloadRawData downloadRawData = new DownloadRawData();
@@ -113,6 +120,11 @@ public class GetRawData {
 
             }finally {
                 if (urlConnection != null){
+                    urlConnection.disconnect();
+                }
+
+                if (reader != null){
+
                     try{
                         reader.close();
                     }catch (IOException e){

@@ -22,14 +22,14 @@ public class ViewNewDetailsActivity extends BaseActivity {
 
         Intent intent = getIntent();
 
-        New news = (New) intent.getSerializableExtra(PHOTO_TRANSFER);
+        New news = (New) intent.getSerializableExtra(NEW_TRANSFER);
 
         TextView newTitle = findViewById(R.id.new_title);
-        newTitle.setText("Title: "+news.getmTitle());
+        newTitle.setText(news.getmTitle());
 
 
         TextView newTags = findViewById(R.id.new_tags);
-        newTags.setText("Description: "+ news.getmDescription());
+        newTags.setText( news.getmDescription());
 
         TextView newAuthor = findViewById(R.id.new_author);
         newAuthor.setText(news.getmAuthor());

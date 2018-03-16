@@ -60,6 +60,8 @@ public class NewRecyclerViewAdapter extends RecyclerView.Adapter<NewRecyclerView
                 .error(R.drawable.no_image)
                 .placeholder(R.drawable.no_image)
                 .into(holder.getmThumbnail());
+
+        holder.mTitle.setText(newtem.getmTitle());
     }
 
     public void loadNewData(List<New> news){

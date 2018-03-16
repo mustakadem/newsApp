@@ -15,6 +15,8 @@ import android.widget.SearchView;
 
 public class SearchActivity extends BaseActivity {
     public static final String NEW_QUERY = "NEW_QUERY";
+    private static final String LOG_TAG = SearchActivity.class.getSimpleName();
+
 
     private SearchView mSearchView;
 
@@ -25,7 +27,7 @@ public class SearchActivity extends BaseActivity {
         activateToolbarWithBackEnabled();
     }
 
-    public boolean onCreateOptionMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu){
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.menu_search,menu);
 

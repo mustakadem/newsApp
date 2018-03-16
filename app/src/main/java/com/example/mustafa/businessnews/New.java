@@ -2,14 +2,17 @@ package com.example.mustafa.businessnews;
 
 import java.io.Serializable;
 
+
+
+
 /**
  * Created by mustafa on 15/03/2018.
  */
 
 public class New implements Serializable {
 
-    private static final long serialVersionUID = 3809936409831543140L;
 
+    private static final long serialVersionUID = -2763122753290886624L;
     private String mTitle;
     private String mUrl;
     private String mAuthor;
@@ -23,9 +26,11 @@ public class New implements Serializable {
         this.mDescription = mDescription;
     }
 
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
+
 
     public String getmTitle() {
         return mTitle;

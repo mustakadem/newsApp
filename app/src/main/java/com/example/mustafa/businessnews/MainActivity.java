@@ -3,7 +3,7 @@ package com.example.mustafa.businessnews;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -56,7 +56,7 @@ public class MainActivity extends BaseActivity {
                         );
 
                         intent.putExtra(
-                          PHOTO_TRANSFER,
+                          NEW_TRANSFER,
                                 mNewRecyclerViewAdapter.getNew(position)
                         );
 
@@ -80,8 +80,8 @@ public class MainActivity extends BaseActivity {
                 );
         String query = getSavedPreferencesData(NEW_QUERY);
         if (query.length() > 0){
-            ProcessPhotos processPhotos = new ProcessPhotos(query,true);
-            processPhotos.execute();
+            ProcessNews processNews = new ProcessNews(query,true);
+            processNews.execute();
         }
     }
 
@@ -114,9 +114,9 @@ public class MainActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public class ProcessPhotos extends GetNewJsonData{
+    public class ProcessNews extends GetNewJsonData{
 
-        public ProcessPhotos(String searchCriteria, boolean marchAll){
+        public ProcessNews(String searchCriteria, boolean marchAll){
             super(searchCriteria,marchAll);
         }
 
